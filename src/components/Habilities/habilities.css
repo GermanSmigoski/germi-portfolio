@@ -12,7 +12,7 @@
 .skillsContainer {
   margin-top: 25px;
   width: 60%;
-  height: 50vh;
+  height: 80vh;
 }
 
 .skillsContainer h1 {
@@ -32,8 +32,12 @@
 .other,
 .learning {
   display: flex;
+  justify-content: center;
   align-items: center;
-  background-color: #151e55;
+  background-color: #0a152b;
+  margin: 20px;
+  padding: 25px;
+  box-shadow: -20px 20px 5px -5px #030c1d;
 }
 
 .skillsContainer h2 {

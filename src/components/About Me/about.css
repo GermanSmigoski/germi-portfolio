@@ -4,11 +4,23 @@
   height: 30vh;
   margin: 0 auto;
   padding: 1.3rem;
+  animation-name: aboutAnim;
+  animation-duration: 2s;
+}
 
+@keyframes aboutAnim {
+  from{
+    transform: translateY(-100%);
+  }
+  to{
+    transform: translateY(0);
+  }
 }
 
 .aboutContainer p {
   text-align: center;
+  margin-top: 15px;
+  width: 40%;
 }
 
 .aboutContainer h2{
