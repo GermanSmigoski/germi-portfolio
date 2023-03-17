@@ -25,7 +25,6 @@ export function Proyect() {
             <span>Boostrap</span>
             <span>Node.js</span>
             <span>Express</span>
-            <span>PostgreSQL</span>
           </div>
           <div className="cardLink">
             <a href="https://hostel-project.vercel.app/" target="_blank">
@@ -47,7 +46,17 @@ export function Proyect() {
             Pokemons, es una single-page application con barra de búsqueda,
             formulario de creación de juegos, filtrado y ordenado de los mismos
           </p>
+          <div className="skillsProyect">
+            <span>React</span>
+            <span>Redux</span>
+            <span>Boostrap</span>
+            <span>Node.js</span>
+            <span>Express</span>
+          </div>
           <div className="cardLink">
+            <a href="">
+              <span>Deploy</span>
+            </a>
             <a
               href="https://github.com/GermanSmigoski/Pokedex-proyect"
               target="_blank"
@@ -67,7 +76,17 @@ export function Proyect() {
             videojuegos, es una single-page application con barra de búsqueda,
             formulario de creación de juegos, filtrado y ordenado de los mismos
           </p>
+          <div className="skillsProyect">
+            <span>React</span>
+            <span>Redux</span>
+            <span>Boostrap</span>
+            <span>Node.js</span>
+            <span>Express</span>
+          </div>
           <div className="cardLink">
+            <a href="">
+              <span>Deploy</span>
+            </a>
             <a
               href="https://github.com/GermanSmigoski/Videogames-proyect"
               target="_blank"
