@@ -8,6 +8,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  animation-name: cardsAppear;
+  animation-duration: 1s;
+}
+
+@keyframes cardsAppear {
+  from{
+    transform: translateX(100%);
+    opacity: 0;
+
+  }
+  to{
+    transform: translateX(0)translateY(0);
+    opacity: 1;
+  }
 }
 
 .card {
