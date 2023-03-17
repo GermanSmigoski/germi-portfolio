@@ -1,0 +1,175 @@
+.header {
+  display: flex;
+  justify-content: space-around;
+  background-color: transparent;
+  max-height: 90px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 100;
+  text-align: center;
+  gap: 1.2rem;
+}
+
+.links {
+  display: flex;
+  justify-content: space-around;
+  min-width: 350px;
+  align-items: center;
+  font-size: 18px;
+}
+
+.links h4 {
+  color: #d4d4d4;
+  font-size: 1rem;
+}
+
+.links a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.links a:hover {
+  text-decoration: #8cffe2a6 underline 3px;
+}
+
+.burguer {
+  width: 35px;
+  height: 30px;
+  margin: 10px 10px;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+}
+.burguer span {
+  background-color: #fff;
+  position: absolute;
+  border-radius: 2px;
+  transition: 0.3s cubic-bezier(0.8, 0.5, 0.2, 1.4);
+  width: 100%;
+  height: 4px;
+  transition-duration: 500ms;
+}
+.burguer span:nth-child(1) {
+  top: 0px;
+  left: 0px;
+}
+.burguer span:nth-child(2) {
+  top: 13px;
+  left: 0px;
+  opacity: 1;
+}
+.burguer span:nth-child(3) {
+  bottom: 0px;
+  left: 0px;
+}
+.burguer:not(.open):hover span:nth-child(1) {
+  transform: rotate(-3deg) scaleY(1.1);
+}
+.burguer:not(.open):hover span:nth-child(2) {
+  transform: rotate(3deg) scaleY(1.1);
+}
+.burguer:not(.open):hover span:nth-child(3) {
+  transform: rotate(-4deg) scaleY(1.1);
+}
+.burguer.open span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 13px;
+}
+.burguer.open span:nth-child(2) {
+  opacity: 0;
+}
+.burguer.open span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 13px;
+}
+
+.links a {
+  color: white;
+  font-size: 1rem;
+  display: block;
+}
+.home h4 {
+  display: none;
+}
+.burguer {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .links a {
+    font-size: 1rem;
+    display: block;
+  }
+
+  .links h4 {
+    font-size: 30px;
+    color: black;
+  }
+  .links {
+    flex-direction: column;
+    margin: 0;
+    position: fixed;
+    left: 100%;
+    top: 70px;
+    width: 100%;
+    background-color: aquamarine;
+    height: calc(100% - 70px);
+    overflow-y: auto;
+  }
+  .burguer {
+    display: block;
+  }
+  .home h4 {
+    display: block;
+  }
+
+  .links.active {
+    flex-direction: column;
+    margin: 0;
+    position: fixed;
+    left: 0;
+    top: 70px;
+    width: 100%;
+    background-color: aquamarine;
+    height: calc(100% - 70px);
+    overflow-y: auto;
+  }
+}
+
+.header.fix {
+  backdrop-filter: blur(15px);
+  transition: 3s ease;
+  border-bottom: 1px solid black;
+}
+
+.header a {
+  text-decoration: none;
+  color: #8cffe2;
+}
+
+.header button {
+  color: #d4d4d4;
+  padding: 4px;
+  gap: 2px;
+  border-radius: 3px;
+  border: 1px solid;
+  cursor: pointer;
+  background-color: #1a202c;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.header h1:hover{
+  color: #8cffe2;
+  text-decoration: underline #8cffe2;
+}
+
+.header button:hover {
+  background-color: #8cffe2;
+  color: #1a202c;
+  border: 1px solid black;
+}
+ 
+
