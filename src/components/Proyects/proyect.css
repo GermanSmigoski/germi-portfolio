@@ -30,10 +30,17 @@
   margin: 10px;
   padding: 10px;
   width: 300px;
-  display: inline-block;
-  vertical-align: top;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   min-height: 500px;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.card a {
+  top: 100%;
+  position: relative;
 }
 .card img {
   max-width: 100%;
@@ -46,6 +53,9 @@
 .card p {
   font-size: 1em;
   margin: 0;
+  position: absolute;
+  max-width: 300px;
+  transform: translateY(200px);
 }
 
 .infoHover {
@@ -56,7 +66,7 @@
 
 .card-description {
   opacity: 0;
-  transition: opacity 0.5s ease-in-out;
+  transition: 1s ease-in-out;
 }
 
 .card:hover .card-description {
@@ -65,11 +75,18 @@
 .card:hover .infoHover {
   opacity: 0;
 }
+
+.card:hover h2{
+ display: none;
+}
 .infoHover span {
   opacity: 0.3;
-  transition: 0.5s ease-in-out;
+  transition: 1s ease-in-out;
 }
-
+.card:hover .skillsProyect {
+  opacity: 0;
+  transition-duration: 1s ease-in-out;
+}
 .proyects h1 {
   color: #8cffe2;
   text-shadow: 0px 0px 15px #76ffdd;
@@ -78,4 +95,10 @@
 .cards a {
   padding: 15px;
   color: white;
+}
+
+.skillsProyect span {
+  border: 1px solid grey;
+  border-radius: 8px;
+  text-align: center;
 }
