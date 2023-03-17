@@ -56,7 +56,7 @@ export function Skills() {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sequelize/sequelize-original.svg"></img>
           </div>
           <div className="box">
-            <span>Postgre SQL</span>
+            <span>PostgreSQL</span>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"></img>
           </div>
           <div className="box">
