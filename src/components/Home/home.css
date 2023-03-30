@@ -5,10 +5,10 @@
   width: 50%;
   display: flex;
   justify-content: space-around;
-  align-items: center; 
+  align-items: center;
 }
 
-.homeInfo h3{
+.homeInfo h3 {
   background: linear-gradient(
     180deg,
     hsla(178, 100%, 67%, 1) 3%,
@@ -21,32 +21,40 @@
   -webkit-text-fill-color: transparent;
 }
 
-.homeInfo{
+.homeInfo {
   animation-name: fadeIn;
   animation-duration: 2s;
 }
 
-
-@keyframes fadeIn{
-  from{
+@keyframes fadeIn {
+  from {
     opacity: 0;
-    transform: translateX(-100%)translateY(-100%);
+    transform: translateX(-100%) translateY(-100%);
   }
-  to{
+  to {
     opacity: 1;
-    transform: translateX(0)translateY(0);
+    transform: translateX(0) translateY(0);
   }
 }
 
-.homeContainer img{
+.homeContainer img {
   animation-name: fadeInImg;
   animation-duration: 2s;
 }
- 
 
-@keyframes fadeInImg{
-  from{
+@keyframes fadeInImg {
+  from {
     opacity: 0;
-    transform: translateX(100%)translateY(-100%);
+    transform: translateX(100%) translateY(-100%);
+  }
+}
+
+@media (max-width: 767px) {
+  .homeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
   }
 }

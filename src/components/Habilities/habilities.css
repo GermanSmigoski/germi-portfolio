@@ -36,6 +36,7 @@
   animation-name: skillsAppear;
   animation-duration: 1s;
   border-radius: 8px;
+  flex-wrap: nowrap;
 }
 
 .skillsContainer h2 {
@@ -60,4 +61,8 @@
     transform: translateX(0) translateY(0);
     opacity: 1;
   }
+}
+
+@media (max-width:767px){
+  
 }

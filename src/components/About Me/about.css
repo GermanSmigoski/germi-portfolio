@@ -23,7 +23,14 @@
   width: 40%;
 }
 
-.aboutContainer h2{
+.aboutContainer h1{
     color: #8cffe2;
     text-shadow: 0px 0px 15px #76ffdd;
+}
+
+@media (max-width:767px){
+ .aboutContainer{
+  height: auto;
+  margin:auto;
+ }
 }
