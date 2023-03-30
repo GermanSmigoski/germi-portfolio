@@ -4,6 +4,10 @@
   border-radius: 15px;
 }
 
+.skillsContainer{
+  height: auto;
+}
+
 .skillsContainer {
   margin-top: 25px;
   width: 60%;
@@ -36,7 +40,7 @@
   animation-name: skillsAppear;
   animation-duration: 1s;
   border-radius: 8px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .skillsContainer h2 {
@@ -63,6 +67,24 @@
   }
 }
 
-@media (max-width:767px){
-  
+@media (max-width: 767px) {
+  .skillsContainer {
+    height: auto;
+  }
+  .backEnd h2 {
+    font-size: 8px;
+  }
+  .frontEnd h2 {
+    font-size: 8px;
+  }
+  .other h2 {
+    font-size: 8px;
+  }
+}
+
+
+@media (max-width:1300px){
+  .skillsContainer{
+    height: auto;
+  }
 }
