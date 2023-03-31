@@ -73,7 +73,7 @@ export function Skills() {
             </div>
             <div className="box">
               <span>Github</span>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"></img>
+              <img style={{filter:'invert(1)'}} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"></img>
             </div>
             <div className="box">
               <span>VS code</span>
@@ -81,7 +81,7 @@ export function Skills() {
             </div>
             <div className="box">
               <span>Next.js</span>
-              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"></img>
+              <img   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"></img>
             </div>
             <div className="box">
               <span>Typescript</span>

@@ -12,6 +12,7 @@
   gap: 1.2rem;
   animation-name: headerSlider;
   animation-duration: 1s;
+  
 }
 
 .links {
@@ -20,11 +21,13 @@
   min-width: 350px;
   align-items: center;
   font-size: 18px;
+  
 }
 
 .links h4 {
   color: #d4d4d4;
   font-size: 1rem;
+  cursor: pointer;
 }
 
 .links a {
@@ -34,6 +37,7 @@
 
 .links a:hover {
   text-decoration: #8cffe2a6 underline 3px;
+  
 }
 
 .burguer {

@@ -1,7 +1,7 @@
 export const infoProyects = {
   data: [
     {
-      id: '1',
+      id: "1",
       img: "hostel.png",
       nombre: "Dinamita Hostel",
       descripcion:
@@ -11,7 +11,7 @@ export const infoProyects = {
       repositorio: "https://github.com/kripto-c/HostelProject",
     },
     {
-      id: '2',
+      id: "2",
       img: "pokemons.png",
       nombre: "Pokedex Proyect",
       descripcion:
@@ -21,7 +21,7 @@ export const infoProyects = {
       repositorio: "https://github.com/GermanSmigoski/Pokedex-proyect",
     },
     {
-      id: '3',
+      id: "3",
       img: "videogames.png",
       nombre: "Videogames Proyect",
       descripcion:
@@ -29,6 +29,16 @@ export const infoProyects = {
       skills: ["React", "Redux", "Boostrap", "Node.js", "Express"],
       deploy: "",
       repositorio: "https://github.com/GermanSmigoski/Videogames-proyect",
+    },
+    {
+      id: "4",
+      img: "valolrant.png",
+      nombre: "Valorant info",
+      descripcion:
+        "Single Page Application que enseña informacion acerca del juego valorant el cual lo utilice para practicar estilos mas que nada y las llamadas a la api.",
+      skills: ["React Vite"],
+      deploy: "https://info-valorant.netlify.app/",
+      repositorio: "https://github.com/GermanSmigoski/Info-valorant",
     },
   ],
 };
