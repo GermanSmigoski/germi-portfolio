@@ -5,13 +5,9 @@
 }
 
 .skillsContainer {
-  height: auto;
-}
-
-.skillsContainer {
   margin-top: 25px;
   width: 60%;
-  height: 80vh;
+  height: auto;
 }
 
 .skillsContainer h1 {
