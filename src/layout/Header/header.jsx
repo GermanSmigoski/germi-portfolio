@@ -26,12 +26,13 @@ export function Header() {
         <a onClick={() => setOpen(!open)} href="#about">
           <h4>About Me</h4>
         </a>
-        <a onClick={() => setOpen(!open)} href="#skills">
-          <h4>Skills</h4>
-        </a>
         <a onClick={() => setOpen(!open)} href="#proyects">
           <h4>Proyects</h4>
         </a>
+        <a onClick={() => setOpen(!open)} href="#skills">
+          <h4>Skills</h4>
+        </a>
+      
         <a onClick={() => setOpen(!open) }href="GermanSmigoski.pdf" download>
           <button>Resume</button>
         </a>

@@ -8,7 +8,20 @@
   align-items: center;
 }
 
+.homeInfo span {
+  font-size: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeInfo h2 {
+  font-size: 58px;
+  text-wrap: balance;
+}
+
 .homeInfo h3 {
+  font-size: 40px;
   background: linear-gradient(
     180deg,
     hsla(178, 100%, 67%, 1) 3%,
@@ -19,6 +32,22 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.homeContainer a > img {
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  filter: grayscale(100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homeInfo img:hover {
+  opacity: 100%;
+  filter: grayscale(0);
+  transform: scale(1.3);
 }
 
 .homeInfo {
@@ -40,6 +69,9 @@
 .homeContainer img {
   animation-name: fadeInImg;
   animation-duration: 2s;
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
 }
 
 @keyframes fadeInImg {
@@ -67,5 +99,16 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+  }
+
+  .homeInfo p {
+    font-size: 28px;
+  }
+
+  .homeInfo h2 {
+    font-size: 38px;
+  }
+  .homeInfo h3 {
+    font-size: 30px;
   }
 }

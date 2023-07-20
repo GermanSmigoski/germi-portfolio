@@ -1,25 +1,28 @@
 .proyects {
-  width: 60%;
-  height: auto;
+  width: 100%;
+  max-width: 1200px;
   margin: 10px auto;
+  padding: 0 20px;
 }
 
 .cards {
-  display: flex;
-  flex-direction: column;
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  justify-items: center;
 }
 
 .card {
   display: flex;
-  margin-bottom: 20px;
+  flex-direction: column;
+  align-items: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 5px;
   overflow: hidden;
   background-color: #030c1d;
+  width: 100%;
+  max-width: 400px;
 }
 
 .card:hover {
@@ -27,65 +30,86 @@
 }
 
 .card img {
-  width: 40%;
+  width: 80%;
   height: auto;
   object-fit: cover;
   padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.card h3 {
+.card h2 {
   font-size: 24px;
   font-weight: bold;
-  margin: 20px;
+  margin: 20px 0;
+  color: #8cffe2;
 }
 
 .card p {
   font-size: 16px;
   margin: 0 20px 20px 20px;
+  color: #ffffff;
 }
 
 .card-info {
   padding: 20px;
-  width: 60%;
+  width: 100%;
 }
 
 .card-skills {
-  border: 1px solid #f1f1f1;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
+}
+
+.card-skills p {
+  font-size: 14px;
+  margin: 5px;
+  padding: 5px 10px;
+  border: 1px solid #f1f1f1;
+  border-radius: 20px;
 }
 
 .card-links {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 .card-links p {
-  color: #8cffe2;
-  text-decoration: underline;
+  color: #76ffddc9;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.card-links p span {
+  margin-left: 5px;
 }
 
 .proyects h1 {
   color: #8cffe2;
   text-shadow: 0px 0px 15px #76ffdd;
-}
-
-.card-info h2 {
-  color: #8cffe2;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {
   .cards {
-    display: flex;
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
-  .card {
-    display: flex;
-    flex-direction: column;
-  }
+
   .card img {
-    padding: auto;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .card-info {
+    width: 150px;
   }
 }

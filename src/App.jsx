@@ -1,11 +1,17 @@
+import { useState } from "react";
 import { Footer, Header } from "./layout/index.jsx";
 import { About, Skills, Proyect, Home } from "./components/index.jsx";
 
 function App() {
+  const [darkMode, setDarkMode] = useState("false");
+  const toggleDarkMode = () => {
+    setDarkMode(!darkMode);
+  };
+
   return (
-    <div className="App">
+    <div className={darkMode ? 'app' : 'app-dark'}>
       <nav>
-        <Header />
+        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       </nav>
       <section id="home">
         <Home />
@@ -13,12 +19,13 @@ function App() {
       <section id="about">
         <About />
       </section>
-      <section id="skills">
-        <Skills />
-      </section>
       <section>
         <Proyect id="proyects" />
       </section>
+      <section id="skills">
+        <Skills />
+      </section>
+
       <footer>
         <Footer> </Footer>
       </footer>

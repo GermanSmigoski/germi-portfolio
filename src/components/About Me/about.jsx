@@ -6,11 +6,11 @@ export function About() {
     <div className="aboutContainer" id="about">
       <h1>Sobre Mi: </h1>
       <p>
-        Mi nombre es German Smigoski tengo 20 años y acutalmente vivo en Rio
-        Negro, Argentina. Desde chico estuve interesado en la tecnologia, me
-        considero una persona que logra lo que se propone y me gusta darle vida
-        a mis ideas. Soy fanatico de los detalles y pienso que los pequeños
-        forman grandes cosas.
+        My name is German Smigoski I am 20 years old and I currently live in Rio
+        Negro, Argentina. Negro, Argentina. Since I was a kid I was interested
+        in technology, I consider myself a person who achieves what he sets out
+        to do and I like to give life to my ideas. to my ideas. I'm a fan of
+        details and I think that small things make big things. big things.
       </p>
     </div>
   );

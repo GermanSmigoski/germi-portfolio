@@ -7,7 +7,7 @@ export function Proyect() {
     <div className="proyects" id="proyects">
       <h1>Proyects</h1>
       <div className="cards">
-        {infoProyects.data.map((proyect) => (
+        {infoProyects.es.map((proyect) => (
           <div key={proyect.id} className="card">
             <img src={proyect.img} alt={proyect.name}></img>
             <div className="card-info">
@@ -20,13 +20,19 @@ export function Proyect() {
               </div>
               <div className="card-links">
                 {proyect.deploy && (
-                  <a href={proyect.deploy} target="_blank">
-                    <p>Deploy:{proyect.deploy}</p>
-                  </a>
+                  <p>
+                    Deploy:
+                    <a href={proyect.deploy} target="_blank">
+                      <span>{proyect.deploy}</span>
+                    </a>
+                  </p>
                 )}
-                <a href={proyect.repositorio} target="_blank">
-                  <p>Repositiorio: {proyect.repositorio}</p>
-                </a>
+                <p>
+                  Repositiorio:
+                  <a href={proyect.repositorio} target="_blank">
+                    <span>{proyect.repositorio}</span>
+                  </a>
+                </p>
               </div>
             </div>
           </div>
