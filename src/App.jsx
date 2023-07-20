@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Footer, Header } from "./layout/index.jsx";
-import { About, Skills, Proyect, Home } from "./components/index.jsx";
+import { About, Skills, Project, Home } from "./components/index.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = useState("false");
@@ -20,7 +20,7 @@ function App() {
         <About />
       </section>
       <section>
-        <Proyect id="proyects" />
+        <Project id="proyects" />
       </section>
       <section id="skills">
         <Skills />

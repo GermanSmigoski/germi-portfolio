@@ -1,4 +1,4 @@
-export const infoProyects = {
+export const infoProjects = {
   es: [
     {
       id: "1",
