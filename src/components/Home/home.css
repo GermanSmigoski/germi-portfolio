@@ -8,11 +8,14 @@
   align-items: center;
 }
 
-.homeInfo span {
+.homeInfo p {
   font-size: 32px;
+}
+
+.homeInfo span{
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .homeInfo h2 {

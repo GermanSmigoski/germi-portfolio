@@ -7,8 +7,8 @@ export function Home() {
       <div className="homeInfo">
         <h2>Hola, soy German Smigoski</h2>
         <h3>Fullstack Web Developer</h3>
+        <p>From Argentina</p>
         <span>
-          From Argentina
           <a
             className="linkedin-home"
             href="https://github.com/GermanSmigoski"
