@@ -52,13 +52,17 @@
   height: 75px;
 }
 
+.box span{
+  text-align: center;
+}
+
 .box img {
-  transition: transform .7s ease-in-out;
+  transition: transform 0.7s ease-in-out;
   cursor: pointer;
 }
 
 .box img:hover {
-  transform: rotate(360deg)scale(1.1);
+  transform: scale(1.1);
 }
 
 @keyframes skillsAppear {

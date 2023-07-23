@@ -3,7 +3,7 @@ import "./about.css";
 
 export function About() {
   return (
-    <div className="aboutContainer" id="about">
+    <section className="aboutContainer" id="about">
       <h1>Sobre Mi: </h1>
       <p>
         My name is German Smigoski I am 20 years old and I currently live in Rio
@@ -12,6 +12,6 @@ export function About() {
         to do and I like to give life to my ideas. to my ideas. I'm a fan of
         details and I think that small things make big things. big things.
       </p>
-    </div>
+    </section>
   );
 }

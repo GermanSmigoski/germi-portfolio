@@ -21,7 +21,7 @@ export function Project() {
   const currentProject = infoProjects.es[currentProjectIndex];
 
   return (
-    <div className="proyects" id="proyects">
+    <section className="proyects" id="proyects">
       <h1>Proyects</h1>
       <div className="slider-container">
         <button onClick={prevProject}>Previous</button>
@@ -55,6 +55,6 @@ export function Project() {
         </div>
         <button onClick={nextProject}>Next</button>
       </div>
-    </div>
+    </section>
   );
 }

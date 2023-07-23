@@ -3,7 +3,7 @@ import "./home.css";
 
 export function Home() {
   return (
-    <div className="homeContainer" id="home">
+    <section className="homeContainer" id="home">
       <div className="homeInfo">
         <h2>Hola, soy German Smigoski</h2>
         <h3>Fullstack Web Developer</h3>
@@ -26,6 +26,6 @@ export function Home() {
         </span>
       </div>
       <img src="germi.webp" alt="home photo mine"></img>
-    </div>
+    </section>
   );
 }

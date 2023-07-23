@@ -3,8 +3,8 @@ import "./habilities.css";
 
 export function Skills() {
   return (
-    <div className="skillsContainer">
-        <h1>Skills: </h1>
+    <section id="skills" className="skillsContainer">
+      <h1>Skills: </h1>
       <div className="boxSkills">
         <div className="frontEnd">
           <h2>Front End:</h2>
@@ -73,7 +73,10 @@ export function Skills() {
             </div>
             <div className="box">
               <span>Github</span>
-              <img style={{filter:'invert(1)'}} src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"></img>
+              <img
+                style={{ filter: "invert(1)" }}
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+              ></img>
             </div>
             <div className="box">
               <span>VS code</span>
@@ -81,7 +84,7 @@ export function Skills() {
             </div>
             <div className="box">
               <span>Next.js</span>
-              <img   src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"></img>
+              <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg"></img>
             </div>
             <div className="box">
               <span>Typescript</span>
@@ -90,6 +93,6 @@ export function Skills() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

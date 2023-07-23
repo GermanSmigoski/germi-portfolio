@@ -9,28 +9,29 @@
 }
 
 @keyframes aboutAnim {
-  from{
+  from {
     transform: translateY(-100%);
   }
-  to{
+  to {
     transform: translateY(0);
   }
 }
 
 .aboutContainer p {
   text-align: center;
+  font-size: 20px;
   margin-top: 15px;
   width: 40%;
 }
 
-.aboutContainer h1{
-    color: #8cffe2;
-    text-shadow: 0px 0px 15px #76ffdd;
+.aboutContainer h1 {
+  color: #8cffe2;
+  text-shadow: 0px 0px 15px #76ffdd;
 }
 
-@media (max-width:767px){
- .aboutContainer{
-  height: auto;
-  margin:auto;
- }
+@media (max-width: 767px) {
+  .aboutContainer {
+    height: auto;
+    margin: auto;
+  }
 }

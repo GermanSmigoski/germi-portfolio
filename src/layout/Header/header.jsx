@@ -15,7 +15,7 @@ export function Header() {
   window.addEventListener("scroll", setFixed);
 
   return (
-    <div className={fix ? "header fix" : "header"}>
+    <header className={fix ? "header fix" : "header"}>
       <a href="#home">
         <h1>German R. Smigoski</h1>
       </a>
@@ -32,8 +32,8 @@ export function Header() {
         <a onClick={() => setOpen(!open)} href="#skills">
           <h4>Skills</h4>
         </a>
-      
-        <a onClick={() => setOpen(!open) }href="GermanSmigoski.pdf" download>
+
+        <a onClick={() => setOpen(!open)} href="GermanSmigoski.pdf" download>
           <button>Resume</button>
         </a>
       </div>
@@ -45,6 +45,6 @@ export function Header() {
         <span></span>
         <span></span>
       </div>
-    </div>
+    </header>
   );
 }

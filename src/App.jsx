@@ -9,26 +9,13 @@ function App() {
   };
 
   return (
-    <div className={darkMode ? 'app' : 'app-dark'}>
-      <nav>
-        <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-      </nav>
-      <section id="home">
-        <Home />
-      </section>
-      <section id="about">
-        <About />
-      </section>
-      <section>
-        <Project id="proyects" />
-      </section>
-      <section id="skills">
-        <Skills />
-      </section>
-
-      <footer>
-        <Footer> </Footer>
-      </footer>
+    <div className={darkMode ? "app" : "app-dark"}>
+      <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+      <Home />
+      <About />
+      <Project />
+      <Skills />
+      <Footer />
     </div>
   );
 }
