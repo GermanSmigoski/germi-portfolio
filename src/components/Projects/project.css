@@ -1,10 +1,8 @@
 /* Slider container */
 .proyects {
-  position: relative;
+  margin-top: 25px;
   width: 60%;
-  height: 30vh;
-  margin: 0 auto;
-  padding: 1.3rem;
+  height: auto;
 }
 
 .proyects h1 {

@@ -4,7 +4,7 @@ import "./about.css";
 export function About() {
   return (
     <section className="aboutContainer" id="about">
-      <h1>Sobre Mi: </h1>
+      <h1>About Me: </h1>
       <p>
         My name is German Smigoski I am 20 years old and I currently live in Rio
         Negro, Argentina. Negro, Argentina. Since I was a kid I was interested
