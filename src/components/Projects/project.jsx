@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Project.css";
+import "./project.css";
 import { infoProjects } from "./info";
 
 export function Project() {
