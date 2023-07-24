@@ -12,6 +12,16 @@ export const infoProjects = {
     },
     {
       id: "2",
+      image: "valorant.webp",
+      nombre: "Valorant info",
+      descripcion:
+        "Single Page Application que enseña informacion acerca del juego valorant el cual lo utilice para practicar estilos mas que nada y las llamadas a la api.",
+      skills: ["React Vite"],
+      deploy: "https://info-valorant.netlify.app/",
+      repositorio: "https://github.com/GermanSmigoski/Info-valorant",
+    },
+    {
+      id: "3",
       image: "pokemons.webp",
       nombre: "Pokedex Project",
       descripcion:
@@ -21,7 +31,7 @@ export const infoProjects = {
       repositorio: "https://github.com/GermanSmigoski/Pokedex-proyect",
     },
     {
-      id: "3",
+      id: "4",
       image: "videogames.webp",
       nombre: "Videogames Project",
       descripcion:
@@ -29,16 +39,6 @@ export const infoProjects = {
       skills: ["React", "Redux", "Boostrap", "Node.js", "Express"],
       deploy: "",
       repositorio: "https://github.com/GermanSmigoski/Videogames-proyect",
-    },
-    {
-      id: "4",
-      image: "valorant.webp",
-      nombre: "Valorant info",
-      descripcion:
-        "Single Page Application que enseña informacion acerca del juego valorant el cual lo utilice para practicar estilos mas que nada y las llamadas a la api.",
-      skills: ["React Vite"],
-      deploy: "https://info-valorant.netlify.app/",
-      repositorio: "https://github.com/GermanSmigoski/Info-valorant",
     },
   ],
   en: [

@@ -4,10 +4,14 @@ import "./project.css";
 import { infoProjects } from "./info";
 
 export function Project() {
-  const [showDescription, setShowDescription] = useState(false);
+  const [projectDescriptions, setProjectDescriptions] = useState(
+    infoProjects.es.map(() => false)
+  );
 
-  const toggleDescription = () => {
-    setShowDescription(!showDescription);
+  const toggleDescription = (index) => {
+    const newDescriptions = [...projectDescriptions];
+    newDescriptions[index] = !newDescriptions[index];
+    setProjectDescriptions(newDescriptions);
   };
 
   return (
@@ -15,29 +19,36 @@ export function Project() {
       <h1>Projects:</h1>
       <div className="project-grid">
         {infoProjects &&
-          infoProjects.es.map((project) => (
+          infoProjects.es.map((project, index) => (
             <div key={project.id} className="project-card">
               <img
                 src={project.image}
                 alt={`${project.name} image`}
-                className={`project-image ${showDescription ? "hidden" : ""}`}
+                className={`project-image ${
+                  projectDescriptions[index] ? "hidden" : ""
+                }`}
               />
               <h3 className="project-title">{project.nombre}</h3>
-              <button onClick={toggleDescription} className="info-button">
+              <button
+                onClick={() => toggleDescription(index)}
+                className="info-button"
+              >
                 <FaInfoCircle />
               </button>
-              {showDescription && (
+              {projectDescriptions[index] && (
                 <p className="project-description">{project.descripcion}</p>
               )}
               <div
-                className={`project-links ${showDescription ? "hidden" : ""}`}
+                className={`project-links ${
+                  projectDescriptions[index] ? "hidden" : ""
+                }`}
               >
                 <a
                   href={project.repositorio}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  Ver Repositorio
+                  See Repository
                 </a>
                 {project.deploy && (
                   <a
@@ -45,7 +56,7 @@ export function Project() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Ver Despliegue
+                    See deploy
                   </a>
                 )}
               </div>
