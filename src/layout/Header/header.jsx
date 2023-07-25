@@ -33,7 +33,7 @@ export function Header() {
           <h4>Skills</h4>
         </a>
 
-        <a onClick={() => setOpen(!open)} href="GermanSmigoski.pdf" download>
+        <a onClick={() => setOpen(!open)} href="CV_German_Smigoski.pdf" download>
           <button>Resume</button>
         </a>
       </div>
