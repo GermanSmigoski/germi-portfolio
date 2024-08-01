@@ -1,6 +1,12 @@
 import { useState } from "react";
 import { Footer, Header } from "./layout/index.jsx";
-import { About, Skills, Project, Home } from "./components/index.jsx";
+import {
+  About,
+  Skills,
+  Project,
+  Home,
+  Experience,
+} from "./components/index.jsx";
 
 function App() {
   const [darkMode, setDarkMode] = useState("false");
@@ -13,6 +19,7 @@ function App() {
       <Header darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
       <Home />
       <About />
+      <Experience />
       <Project />
       <Skills />
       <Footer />

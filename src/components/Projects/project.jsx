@@ -4,16 +4,6 @@ import "./project.css";
 import { infoProjects } from "./info";
 
 export function Project() {
-  const [projectDescriptions, setProjectDescriptions] = useState(
-    infoProjects.es.map(() => false)
-  );
-
-  const toggleDescription = (index) => {
-    const newDescriptions = [...projectDescriptions];
-    newDescriptions[index] = !newDescriptions[index];
-    setProjectDescriptions(newDescriptions);
-  };
-
   return (
     <section className="projects" id="projects">
       <h1>Projects:</h1>
@@ -24,25 +14,12 @@ export function Project() {
               <img
                 src={project.image}
                 alt={`${project.name} image`}
-                className={`project-image ${
-                  projectDescriptions[index] ? "hidden" : ""
-                }`}
+                className="project-image "
               />
               <h3 className="project-title">{project.nombre}</h3>
-              <button
-                onClick={() => toggleDescription(index)}
-                className="info-button"
-              >
-                <FaInfoCircle />
-              </button>
-              {projectDescriptions[index] && (
-                <p className="project-description">{project.descripcion}</p>
-              )}
-              <div
-                className={`project-links ${
-                  projectDescriptions[index] ? "hidden" : ""
-                }`}
-              >
+              <FaInfoCircle className="info-button" />
+              <p className="project-description">{project.descripcion}</p>
+              <div className="project-links">
                 <a
                   href={project.repositorio}
                   target="_blank"

@@ -1,11 +1,12 @@
 .aboutContainer {
   position: relative;
-  width: 60%;
+  width: 80%;
   height: auto;
   margin: 0 auto;
   padding: 1.3rem;
   animation-name: aboutAnim;
   animation-duration: 2s;
+  padding-bottom: 50px;
 }
 
 @keyframes aboutAnim {
@@ -21,12 +22,12 @@
   text-align: center;
   font-size: 20px;
   margin-top: 15px;
-  width: 40%;
+  width: 70%;
 }
 
 .aboutContainer h1 {
-  color: #8cffe2;
-  text-shadow: 0px 0px 15px #76ffdd;
+  color: #58b85e;
+  text-shadow: 0px 0px 15px #6eb47fd3;
 }
 
 @media (max-width: 767px) {

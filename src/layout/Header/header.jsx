@@ -17,7 +17,7 @@ export function Header() {
   return (
     <header className={fix ? "header fix" : "header"}>
       <a href="#home">
-        <h1>German R. Smigoski</h1>
+        <h1>German Smigoski</h1>
       </a>
       <div className={`links ${open ? "active" : ""}`}>
         <a className="home" onClick={() => setOpen(!open)} href="#">
@@ -33,7 +33,11 @@ export function Header() {
           <h4>Skills</h4>
         </a>
 
-        <a onClick={() => setOpen(!open)} href="CV_German_Smigoski.pdf" download>
+        <a
+          onClick={() => setOpen(!open)}
+          href="CV_German_Smigoski.pdf"
+          download
+        >
           <button>Resume</button>
         </a>
       </div>

@@ -5,25 +5,17 @@ export function Home() {
   return (
     <section className="homeContainer" id="home">
       <div className="homeInfo">
-        <h2>Hola, soy German Smigoski</h2>
+        <h2>
+          Hello, i'm <span>German Smigoski</span>
+        </h2>
         <h3>Fullstack Web Developer</h3>
-        <p>From Argentina</p>
-        <span>
-          <a
-            className="linkedin-home"
-            href="https://github.com/GermanSmigoski"
-            target="_blank"
-          >
-            <img src="/github.svg" />
-          </a>
-          <a
-            className="github-home"
-            href="https://www.linkedin.com/in/german-smigoski-84323a252/"
-            target="_blank"
-          >
-            <img src="/linkedin.svg" />
-          </a>
-        </span>
+        <div className="nationality">
+          <p>From Argentina</p>
+          <img
+            style={{ width: "90px", height: "80px", margin: 0 }}
+            src="./argentina.png"
+          />
+        </div>
       </div>
       <img src="germi.webp" alt="home photo mine"></img>
     </section>

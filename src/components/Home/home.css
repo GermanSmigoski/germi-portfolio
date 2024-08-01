@@ -13,9 +13,7 @@
 }
 
 .homeInfo span {
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-start;
+  color: #6eb47fd3;
 }
 
 .homeInfo h2 {
@@ -25,16 +23,6 @@
 
 .homeInfo h3 {
   font-size: 40px;
-  background: linear-gradient(
-    180deg,
-    hsla(178, 100%, 67%, 1) 3%,
-    hsla(178, 100%, 75%, 1) 30%,
-    hsla(0, 0%, 100%, 1) 48%,
-    hsla(178, 100%, 75%, 1) 72%,
-    hsla(182, 75%, 68%, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .homeContainer a > img {
@@ -47,10 +35,17 @@
   justify-content: center;
 }
 
-.homeInfo img:hover {
-  opacity: 100%;
-  filter: grayscale(0);
-  transform: scale(1.3);
+.nationality {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 450px;
+  margin: 0;
+}
+
+.nationality p {
+  margin: 0;
+  color: #6eb47fd3;
 }
 
 .homeInfo {
